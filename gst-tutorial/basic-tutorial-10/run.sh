@@ -1,0 +1,1 @@
+gst-launch-1.0 filesrc location=$(pwd)/../sintel_trailer-480p.webm ! matroskademux name=d d.audio_0 ! vorbisparse ! matroskamux ! filesink location=sintel_audio.mka
